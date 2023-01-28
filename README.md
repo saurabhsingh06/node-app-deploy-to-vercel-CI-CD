@@ -54,3 +54,6 @@ How to deploy node application to vercel. Using actions feature of github for CI
             }
             ]
         }
+
+
+# DEPLOYED ON https://node-app-deploy-to-vercel-ci-cd.vercel.app/
