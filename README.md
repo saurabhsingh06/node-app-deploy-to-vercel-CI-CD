@@ -35,4 +35,22 @@ How to deploy node application to vercel. Using actions feature of github for CI
     => While cloning use ssh URL instead of http
     => Setup is done
 
-# 2  
+# 2  Goto github repo and click on actions
+# 3  Scroll down to Continous Integration sections and click view all
+# 4  Type Node.js => Click Configure => click Start commit
+# 5  Create vercel.json file and paste
+        {
+            "version": 2,
+            "builds": [
+            {
+                "src": "index.js",
+                "use": "@now/node"
+            }
+            ],
+            "routes": [
+            {
+                "src": "/(.*)",
+                "dest": "index.js"
+            }
+            ]
+        }
